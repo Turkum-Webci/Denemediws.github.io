@@ -35,18 +35,31 @@
             min-height: 200px;
             width: 250px;
         }
+        #e2{
+            background-color: rgb(0, 165, 165);
+            min-height: 80px;
+            width: 275px;
+        }
         #a2 *{
-            display: inline;
             font-size: 30px;
+        }
+        #aa1, #aa2, #aa3{
+display: inline;
         }
         #a1{
             display: none;
         }
         #a2{
             display: none;
+            background-color: rgb(140, 0, 0);
         }
         #a3{
             display: none;
+            background-color: brown;
+        }
+        #a4{
+            display: none;
+            background-color: rgb(78, 21, 21);
         }
     </style>
 </head>
@@ -54,7 +67,8 @@
     <div id="renk1">
     <div id="kont1">
         <button onclick="A1()">Anasayfa</button>
-        <button onclick="A2()">DenemedivAI'yi İndir</button>
+        <button onclick="A2()">DenemedivAI</button>
+        <button onclick="A4()">Ofiso</button>
         <button onclick="A3()">Hakkımızda</button>
     </div>
     </div>
@@ -65,29 +79,57 @@
             <h2>DenemedivAI: </h2>
             <p>Denemediv'in Yapay Zekası Olan <br> DenemedivAI Yapılıyor DenemedivAI <br> İle Sohbet Edilebilir.</p>
         </div>
+        <div id="e2">
+            <h2>Ofiso: </h2>
+            <p>Ofiso Oyunu Güzel Bir Oyundur İşte :D</p>
+        </div>
     </div>
         <div id="a2">
-            <p>DenemedivAIyi</p>
-            <a href="denemedivAI.zip" download="DenemedivAI.zip">Buradan</a>
-            <p>İndirebilirsiniz</p>
+            <p id="aa1">DenemedivAIyi</p>
+            <a href="denemedivAI.zip" download="DenemedivAI.zip" id="aa2">Buradan</a>
+            <p id="aa3">İndirebilirsiniz</p>
+            <br>
+            <hr>
+            <br>
+            <h1>DenemedivAI:</h1>
+            <p>DenemedivAI Birer Sohbet Robotudur Çok Gelişmiş Değildir Ama Yinede 8 şeye cevap verebilir</p>
         </div>
     <div id="a3">
         <h2>Hakkımızda:</h2>
-        <p>Denemediv Kerem Güzeller Tarafından Oluşturulmış Birer Web Sitesidir.</p>
+        <p>İlk Başta Ben 2019-2021 Yılları Arasında Yazılımcılığı Çok Ufaktan Öğreniyordum. 2024 Yılında Yazılımcılıkda Hızla Öğrenmeye Başladım Ve Yeni Bilgisayarım Oldu.Sonra Daha Çok Öğreniyordum Ve php, css, js, xml Öğrenmeye Baişladım.</p>
+    </div>
+    <div id="a4">
+        <a href="zip2.zip" download="ofiso_indir.zip" style="font-size: 30px; color: rgb(255, 0, 0);">Ofisoyu İndir !</a>
+        <br><hr><br>
+        <h2>Ofiso Kurulum Aşaması: </h2>
+        <p>İlk Başta Ofisoyu İndire Basınız</p>
+        <p>Sonrasında Dosya İndirilsin</p>
+        <p>İndirildikden Sonra Dosyaya Sağ Tıklayıp "Tümünü Ayıkla" Düğmesine Tıklayıp Bekeleyiniz</p>
+        <p>Sonrasında "baslangıc.html" Dosyasına Tıklayıp Oyunu Oynayınız</p>
+        <p>Bakalım Hikayeyi Çözebilecekmisiniz ?</p>
     </div>
     <script>
         function A1(){
             document.getElementById("a1").style.display = "block";
             document.getElementById("a2").style.display = "none";
             document.getElementById("a3").style.display = "none";
+            document.getElementById("a4").style.display = "none";
         }
         function A2(){
             document.getElementById("a2").style.display = "block";
             document.getElementById("a1").style.display = "none";
             document.getElementById("a3").style.display = "none";
+            document.getElementById("a4").style.display = "none";
         }
         function A3(){
             document.getElementById("a3").style.display = "block";
+            document.getElementById("a2").style.display = "none";
+            document.getElementById("a1").style.display = "none";
+            document.getElementById("a4").style.display = "none";
+        }
+        function A4(){
+            document.getElementById("a4").style.display = "block";
+            document.getElementById("a3").style.display = "none";
             document.getElementById("a2").style.display = "none";
             document.getElementById("a1").style.display = "none";
         }
